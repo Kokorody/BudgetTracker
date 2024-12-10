@@ -57,6 +57,17 @@ View the credits and acknowledgments for the developers of WallaWet.
 
 ## Screenshots
 
+![IMG-20241211-WA0002](https://github.com/user-attachments/assets/dab4c791-3359-44cf-9914-8045e292b585)
+
+![IMG-20241211-WA0001](https://github.com/user-attachments/assets/7bd201bd-e5fa-4274-81a2-2fe22ca08d2d)
+
+![IMG-20241211-WA0003](https://github.com/user-attachments/assets/55377666-15d9-4b8f-87fe-95a36c5876a0)
+
+![IMG-20241211-WA0004](https://github.com/user-attachments/assets/99d142c3-b910-4d8a-9a20-727953983704)
+
+![IMG-20241211-WA0005](https://github.com/user-attachments/assets/7024a9ed-d679-4fad-93a7-d63c79c52078)
+
+![IMG-20241211-WA0006](https://github.com/user-attachments/assets/551caaf1-501e-4c31-8ea9-019c133f3a5c)
 
 ---
 

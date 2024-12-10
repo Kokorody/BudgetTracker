@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#FF808080</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorShopping">#FF5733</color>
+    <color name="colorTransportation">#33FF57</color>
+    <color name="colorLifestyle">#3357FF</color>
+    <color name="colorBills">#F5A623</color>
+    <color name="colorGrocery">#FF00FF</color>
+    <color name="colorFoodDrink">#FF7F50</color>
+    <color name="colorEntertainment">#FFD700</color>
+    <color name="colorHealth">#32CD32</color>
+    <color name="colorEducation">#4682B4</color>
+    <color name="colorPersonalCare">#D2691E</color>
+    <color name="colorTechnology">#1E90FF</color>
+    <color name="colorHome">#D3D3D3</color>
+    <color name="colorUtilities">#8A2BE2</color>
+    <color name="colorInsurance">#B8860B</color>
+    <color name="colorSubscriptions">#FF6347</color>
+    <color name="colorDefault">#000000</color>
+
+    <!-- Theme colors -->
+    <color name="primary">#8B6BC7</color>              <!-- Warna ungu untuk button -->
+    <color name="primary_variant">#9C7EDB</color>      <!-- Warna ungu lebih terang -->
+    <color name="background">#FFFFFF</color>           <!-- Background putih -->
+    <color name="surface">#F5F5F5</color>             <!-- Warna card/surface -->
+    <color name="on_surface">#1C1B1F</color>          <!-- Warna text di surface -->
+    <color name="bottom_nav_bg">#FFFFFF</color>        <!-- Background bottom nav -->
+    <color name="bottom_nav_selected">#8B6BC7</color>  <!-- Warna icon selected -->
+    <color name="bottom_nav_unselected">#757575</color><!-- Warna icon unselected -->
+</resources>

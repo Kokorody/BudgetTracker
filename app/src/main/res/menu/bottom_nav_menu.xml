@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@mipmap/home"/> <!-- Home Button -->
+    <item
+        android:id="@+id/nav_Summary"
+        android:title="Summary"
+        android:icon="@mipmap/chart"/> <!-- Profile Button -->
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@mipmap/setting"/> <!-- Settings Button -->
+</menu>

@@ -77,10 +77,6 @@ Developed by:
 
 ---
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 ## Contributions
 Contributions are welcome! Please request then fork this repository and submit a pull request with your proposed changes.

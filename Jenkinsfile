@@ -23,19 +23,18 @@ pipeline {
         echo "Jenkins Workspace: ${env.WORKSPACE}"
       }
     }
-    stage('Checkout Code') {
-      steps {
+stage('Checkout Code') {
+    steps {
         script {
-          def checkoutVars = checkout([$class: 'GitSCM', 
-            branches: [[name: '*/main']], 
-            userRemoteConfigs: [[url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git']]
-          ])
-          env.GIT_URL = checkoutVars.GIT_URL
-          env.GIT_COMMIT = checkoutVars.GIT_COMMIT
-          env.GIT_BRANCH = checkoutVars.GIT_BRANCH
+            retry(3) { // Coba ulang hingga 3 kali
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: '*/main']], 
+                    userRemoteConfigs: [[url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git']]
+                ])
+            }
         }
-      }
     }
+}
     stage('Package Application') {
       steps {
         // Run GitVersion if available

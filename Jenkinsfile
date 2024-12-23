@@ -23,18 +23,22 @@ pipeline {
         echo "Jenkins Workspace: ${env.WORKSPACE}"
       }
     }
-stage('Checkout Code') {
-    steps {
+    stage('Checkout Code') {
+      steps {
         script {
-            retry(3) { // Coba ulang hingga 3 kali
-                checkout([$class: 'GitSCM', 
-                    branches: [[name: '*/main']], 
-                    userRemoteConfigs: [[url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git']]
-                ])
-            }
+          retry(3) { // Coba ulang hingga 3 kali
+            checkout([
+              $class: 'GitSCM',
+              branches: [[name: '*/main']], // Ubah 'main' jika branch berbeda
+              userRemoteConfigs: [[
+                url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git',
+                credentialsId: 'your-credentials-id' // Ganti dengan ID kredensial Anda
+              ]]
+            ])
+          }
         }
+      }
     }
-}
     stage('Package Application') {
       steps {
         // Run GitVersion if available

@@ -1,4 +1,4 @@
-//budgetdetails
+//budgetdetails author kokorody
 
 package com.example.budgetest;
 

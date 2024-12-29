@@ -27,7 +27,7 @@ pipeline {
       steps {
         script {
           def checkoutVars = checkout([$class: 'GitSCM', 
-            branches: [[name: '*/main']], 
+            branches: [[name: '*/master']], 
             userRemoteConfigs: [[url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git']]
           ])
           env.GIT_URL = checkoutVars.GIT_URL

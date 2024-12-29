@@ -29,10 +29,10 @@ pipeline {
           retry(3) { // Coba ulang hingga 3 kali
             checkout([
               $class: 'GitSCM',
-              branches: [[name: '*/main']], // Ubah 'main' jika branch berbeda
+              branches: [[name: '*/master']], // Ubah 'main' jika branch berbeda
               userRemoteConfigs: [[
                 url: 'https://github.com/Kokorody/Budget_Tracker_Wallawet.git',
-                credentialsId: 'your-credentials-id' // Ganti dengan ID kredensial Anda
+                // credentialsId: 'your-credentials-id' // Ganti dengan ID kredensial Anda
               ]]
             ])
           }

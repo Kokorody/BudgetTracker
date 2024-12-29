@@ -41,15 +41,22 @@ pipeline {
     }
     stage('Package Application') {
       steps {
-        // Run GitVersion if available
-        bat(script: 'which gitversion && gitversion /output buildserver || true')
+        // Check if GitVersion exists and run it (Windows compatible)
         script {
+          def gitVersionCommand = 'where gitversion'
+          def gitVersionExists = bat(script: gitVersionCommand, returnStatus: true) == 0
+          
+          if (gitVersionExists) {
+            bat 'gitversion /output buildserver'
+          }
+          
           if (fileExists('gitversion.properties')) {
             def props = readProperties file: 'gitversion.properties'
             env.VERSION_SEMVER = props.GitVersion_SemVer
           } else {
             env.VERSION_SEMVER = "1.0.0." + env.BUILD_NUMBER
           }
+          
           def packageName = 'Budget_Tracker_Wallawet'
           env.ARTIFACT_NAME = "${packageName}.${env.VERSION_SEMVER}.zip"
           octopusPack(

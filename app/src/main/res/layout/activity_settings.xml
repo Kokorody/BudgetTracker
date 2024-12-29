@@ -43,10 +43,25 @@
             android:id="@+id/switchTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Switch Them  "
-            android:textSize="16sp"
+            android:text="Switch Theme  "
+            android:layout_marginBottom="1dp"/>
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"/>
+
+        <!-- App Version -->
+        <TextView
+            android:id="@+id/AppVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallawet Budget Tracker V 1.1"
+            android:textSize="14sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginTop="16dp"/>
 
     </LinearLayout>
 

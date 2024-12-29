@@ -15,7 +15,7 @@ pipeline {
         stage('Setup SDK') {
             steps {
                 script {
-                    sh '''
+                    bat '''
                     sdkmanager --licenses || true
                     sdkmanager "platform-tools" "build-tools;33.0.2" "platforms;android-33"
                     '''

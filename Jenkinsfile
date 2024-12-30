@@ -1,5 +1,3 @@
-// pipeline configuration file
-
 pipeline {
     agent any
     

@@ -11,7 +11,7 @@ public class ThemePreferences {
     private final SharedPreferences preferences;
 
     public ThemePreferences(Context context) {
-        preferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        preferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
     }
 
     public void setDarkMode(boolean isDarkMode) {

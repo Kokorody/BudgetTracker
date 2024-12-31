@@ -1,4 +1,3 @@
-// MyApplication.java
 package com.example.budgetest;
 
 import android.app.Application;

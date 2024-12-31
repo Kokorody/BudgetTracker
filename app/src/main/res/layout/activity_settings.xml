@@ -59,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Wallawet Budget Tracker V 1.1"
+            android:text="© EaseTuner 2024"
             android:textSize="14sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"/>

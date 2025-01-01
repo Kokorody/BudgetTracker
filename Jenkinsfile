@@ -19,26 +19,32 @@ pipeline {
             }
         }
         
+        stage('Clean') {
+            steps {
+                bat './gradlew clean'
+            }
+        }
+
         stage('Build') {
             steps {
                 bat './gradlew assembleDebug'
             }
         }
-        
+
         stage('Test') {
             steps {
                 bat './gradlew test'
             }
         }
-        
+
         stage('Archive APK') {
             steps {
-                archiveArtifacts artifacts: '**/app/build/outputs/apk/debug/app-debug.apk', 
+                archiveArtifacts artifacts: '**/app/build/outputs/apk/debug/app-debug.apk',
                     allowEmptyArchive: false
             }
         }
     }
-    
+
     post {
         success {
             echo 'Build successful!'

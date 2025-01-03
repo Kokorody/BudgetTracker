@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        ANDROID_HOME = '"C:\Users\USER\AppData\Local\Android\Sdk"'
+        ANDROID_HOME = 'C:\Users\USER\AppData\Local\Android\Sdk'
     }
     
     stages {

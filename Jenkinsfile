@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        //change this to your sdk path
+   //change this to your sdk path
         ANDROID_HOME = 'C:\\Users\\Kmsmr\\AppData\\Local\\Android\\Sdk'
     }
     

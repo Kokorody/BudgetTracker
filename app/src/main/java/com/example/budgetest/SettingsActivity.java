@@ -95,8 +95,7 @@ public class SettingsActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("Credits")
                 .setMessage("App created by KokoRody.\n\n" +
-                        "Version 1.0\n\n" +
-                        "For inquiries, contact: https://github.com/Kokorody")
+                        "Version 1.1\n\n")
                 .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
                 .show();
     }
